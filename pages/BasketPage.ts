@@ -3,7 +3,7 @@ import { type Locator, type Page } from '@playwright/test';
 export class BasketPage {
     readonly page: Page;
     readonly basketItems: Locator;
-    readonly basketCount: Locator; // Sepet sayacı (#basketCount)
+    readonly basketCount: Locator;
     readonly deleteItemBtn: Locator;
 
     readonly firstNameInput: Locator;
