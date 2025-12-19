@@ -258,7 +258,7 @@ test('Verify Successful Login', async ({ page }) => {
 
 - 📧 Email: [Contact](mailto:220302443@student.ius.edu.ba)
 - 🎓 Course: **SE302 - Software Testing and Maintenance**
-- 🏫 Institution: US: International University of Sarajevo
+  - 🏫 Institution: İUS: International University of Sarajevo
 - 📅 Semester: Fall 2025
 
 ---
