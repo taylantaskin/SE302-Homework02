@@ -9,15 +9,12 @@ export class LoginPage {
     constructor(page: Page) {
         this.page = page;
 
-        // Codegen'den kopyaladığımız "adresleri" buraya yapıştırıyoruz:
         this.emailInput = page.getByRole('textbox', { name: 'Email address' });
         this.passwordInput = page.getByRole('textbox', { name: 'Password' });
         this.loginButton = page.getByRole('button', { name: 'Login' });
     }
 
-    // Eylemleri (Methodları) burada tanımlıyoruz
     async login(email: string, pass: string) {
-        // .click() yapmaya gerek yok, .fill() otomatik odaklar
         await this.emailInput.fill(email);
         await this.passwordInput.fill(pass);
         await this.loginButton.click();

@@ -6,7 +6,6 @@ export class BasketPage {
     readonly basketCount: Locator; // Sepet sayacı (#basketCount)
     readonly deleteItemBtn: Locator;
 
-    // Form Elemanları
     readonly firstNameInput: Locator;
     readonly lastNameInput: Locator;
     readonly addressInput: Locator;
@@ -22,7 +21,6 @@ export class BasketPage {
         this.basketCount = page.locator('#basketCount'); // Codegen'den öğrendik
         this.deleteItemBtn = page.getByRole('link', { name: 'Delete Item' });
 
-        // Form Elemanları
         this.firstNameInput = page.locator('#name').first();
         this.lastNameInput = page.locator('#name').nth(1);
         this.addressInput = page.getByRole('textbox', { name: 'Address', exact: true });
