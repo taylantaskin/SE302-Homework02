@@ -189,7 +189,9 @@ npx playwright show-report
 ```bash
 npx playwright test --reporter=html
 ```
+## 📊 Test Results Screenshot
 
+![Test Execution Results](test-results.png)
 ---
 
 ##  Test Results
